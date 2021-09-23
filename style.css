@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+:root {
+    --primary-color: #E84545;
+    --black-color: #2B2E4A;
+}
+
+body {
+    font-family: 'Oxygen',
+        sans-serif;
+    background-color: var(--black-color);
+}
+
+header {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header,
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    height: 60vh;
+    width: 50vw;
+    padding-top: 2rem;
+    margin: auto;
+}
+
+.container label {
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.non-bullet-list {
+    padding-inline-start: 0px;
+    font-size: 1.2rem;
+}
+
+.inline-list-item {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+}
+
+.links {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#input {
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    font-family: inherit;
+    margin: auto;
+    width: 30vh;
+    padding: 0.9rem;
+    margin: 1rem auto;
+}
+
+#check-palindrome-btn {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: auto;
+    padding: 0.7rem;
+}
+
+#output {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: auto;
+    padding-top: 2rem;
+    text-align: center;
+}
