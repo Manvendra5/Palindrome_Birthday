@@ -185,6 +185,9 @@ function getNextPalindromeDate(date) {
 const dob = document.querySelector('#input');
 const checkPalindromeButton = document.querySelector('#check-palindrome-btn');
 const outputMessage = document.querySelector('#output');
+const goatImage = document.querySelector('#goat');
+
+goatImage.style.display = "none";
 
 function handleClick() {
     if (dob.value !== '') {
@@ -196,16 +199,34 @@ function handleClick() {
         }
         
         if (checkPalindromeForAllDateFormats(date)) {
-            outputMessage.innerText = "Yay! Your Birthday is a Palindrome🎉";
+            outputMessage.innerText = "";
+            goatImage.style.display = "block";
+            setTimeout(() => {
+                goatImage.style.display = "none";
+                outputMessage.innerText = "Yay! Your Birthday is a Palindrome🎉";
+            }, 3000);
+            
         } else {
             const [missedByHowMuch, nextDate] = getNextPalindromeDate(date);
             const [missedBy, previousDate] = getPreviuosPalindromeDate(date);
 
             if (missedByHowMuch < missedBy) {
-                outputMessage.innerText = `Nope! Not a Palindrome. It could have been if you were born on ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${missedByHowMuch} days`;
+                outputMessage.innerText = "";
+                goatImage.style.display = "block";
+                setTimeout(() => { 
+                    goatImage.style.display = "none";
+                    outputMessage.innerText = `Nope! Not a Palindrome. It could have been if you were born on ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${missedByHowMuch} days`;
+                }, 3000);
+                
             }
             else {
-                outputMessage.innerText = `Nope! Not a Palindrome. It could have been if you were born on ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${missedBy} days`;
+                outputMessage.innerText = "";
+                goatImage.style.display = "block";
+                setTimeout(() => { 
+                    goatImage.style.display = "none";
+                    outputMessage.innerText = `Nope! Not a Palindrome. It could have been if you were born on ${previousDate.day}-${previousDate.month}-${previousDate.year}, you missed it by ${missedBy} days`;
+                }, 3000);
+                
             }
 
         }
