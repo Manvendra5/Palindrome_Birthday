@@ -1,99 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 
 :root {
-  --primary-color: #e84545;
-  --black-color: #2b2e4a;
+    --primary-color: #e84545;
+    --black-color: #2b2e4a;
 }
 
 body {
-  font-family: "Oxygen", sans-serif;
-  background-color: var(--black-color);
+    font-family: "Oxygen", sans-serif;
+    background-color: var(--black-color);
 }
 
 header {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  color: var(--primary-color);
-  text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 header,
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .container {
-  height: 60vh;
-  width: 50vw;
-  padding-top: 2rem;
-  margin: auto;
+    height: 60vh;
+    width: 50vw;
+    padding-top: 1rem;
+    margin: auto;
 }
 
 .container label {
-  display: block;
-  color: var(--primary-color);
-  font-size: 1.2rem;
-  margin: auto;
-  text-align: center;
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: auto;
+    text-align: center;
 }
 
 .footer {
-  color: var(--primary-color);
-  margin-top: 2rem;
-  text-align: center;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .non-bullet-list {
-  padding-inline-start: 0px;
-  font-size: 1.2rem;
+    padding-inline-start: 0px;
+    font-size: 1.2rem;
 }
 
 .inline-list-item {
-  display: inline-block;
-  list-style: none;
-  padding: 1rem;
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
 }
 
 .links {
-  color: var(--primary-color);
-  text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 #input {
-  border: none;
-  border-radius: 0.5rem;
-  display: block;
-  font-size: 0.9rem;
-  font-family: inherit;
-  margin: auto;
-  width: 30vh;
-  padding: 0.9rem;
-  margin: 1rem auto;
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    font-family: inherit;
+    margin: auto;
+    width: 30vh;
+    padding: 0.9rem;
+    margin: 1rem auto;
 }
 
 #check-palindrome-btn {
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 0.5rem;
-  display: block;
-  font-family: inherit;
-  font-size: 1rem;
-  margin: auto;
-  padding: 0.7rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: auto;
+    padding: 0.7rem;
 }
 
 #goat {
-  padding-top: 1rem;
-  display: block;
-  width: 30vh;
-  margin: auto;
+    padding-top: 1rem;
+    display: block;
+    width: 30vh;
+    margin: auto;
+}
+
+#note {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: normal;
+    margin: auto;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 #output {
-  color: var(--primary-color);
-  font-size: 1.3rem;
-  font-weight: normal;
-  margin: auto;
-  padding-top: 2rem;
-  text-align: center;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: auto;
+    padding-top: 2rem;
+    text-align: center;
 }
